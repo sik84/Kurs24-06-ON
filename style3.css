@@ -1,0 +1,50 @@
+body {
+    background: linear-gradient(to bottom, black 33%, red 33%, red 66%, #D4AF37 66%);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white; /* Kräftiges Orange für die Überschrift */
+    text-align: center;
+    background-color: black;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+    
+ul {
+    color: black;
+    list-style-position: inside; /* Spiegelpunkte nach innen bringen */
+    padding: 0; /* Entfernt den linken Rand der Liste */
+    text-align: center; /* Zentriert den gesamten Inhalt der Liste */
+}
+
+li {
+    text-align: center;
+    font-weight: bold;
+}
+
+img {
+    display: block;
+    margin: 50px auto;
+    width: 250px;
+    border: 3px solid; /* Rahmen um das Bild */
+    border-radius: 10px;
+    background-color: gold;
+}
+    
+div {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
