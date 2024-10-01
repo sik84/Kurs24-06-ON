@@ -1,0 +1,115 @@
+/* Grundlegende Styles */
+body {
+    font-family: 'Dancing Script', cursive;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Dancing Script', cursive; /* Künstlerische Schriftart */
+    list-style-type: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /* Größere Schriftart für einen künstlerischen Effekt */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-family: Arial, sans-serif; /* Navigationslinks bleiben klar und leserlich */
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    font-family: 'Dancing Script', cursive; /* Künstlerische Schriftart für Überschriften */
+}
+
+footer {
+    font-family: Arial, sans-serif; /* Klarere Schrift im Footer */
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+
+/* Stil für Bilder */
+img {
+    width: 100%; /* Bild auf die Breite des Containers skalieren */
+    max-width: 400px; /* Maximale Breite des Bildes */
+    height: auto; /* Höhe proportional anpassen */
+    display: block; /* Bild als Blockelement darstellen */
+    margin: 20px auto; /* Zentrierung und Abstand */
+}
+
+
+/* Tabellenstil */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* Galerie-Styling */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery-container img {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1); /* Bildvergrößerung beim Überfahren */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
