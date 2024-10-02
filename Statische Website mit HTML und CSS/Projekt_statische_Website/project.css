@@ -1,0 +1,267 @@
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+    color: black;
+    text-align: center;
+}
+/* Header */
+header {
+    background-color: #333;
+    color: yellow;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    color: yellow;
+    margin: 0;
+}
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+header nav ul li a {
+    color: yellow;
+    text-decoration: none;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+/* Section */
+section {
+    padding: 20px;
+    background-color: #ECF0F1;
+    text-align: center;
+}
+section h2 {
+    color: black;
+}
+section p {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+section img {
+    max-width: 600px;
+    margin: auto;
+}
+/* Div */
+.div {
+    padding: 20px;
+}
+.div h3 {
+    color: #2C3E50;
+    margin-top: 0;
+}
+.div p {
+    color: #333;
+    margin-bottom: 0;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: yellow;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+footer p {
+    margin-bottom: 10px;
+    color: yellow;
+}
+
+footer nav ul {
+    color: yellow;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline; /* Elemente nebeneinander anordnen */
+    margin: 0 0px; /* Abstand zwischen den Links */
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: yellow; /* Schwarzer Text */
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline; /* Unterstreichen beim Hover */
+}
+
+class {
+    Display: inline;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 50px;
+    }
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        background-color: #007bff; /* Blau */
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background-color: #0056b3; /* Dunkleres Blau bei Hover */
+    }
+
+/* Grundlegende Einstellungen */
+body {
+    font-family: Arial, sans-serif; /* Schriftart */
+    margin: 0; /* Entfernt Standard-Margen */
+    padding: 0; /* Entfernt Standard-Padding */
+    background-color: #f4f4f4; /* Hintergrundfarbe */
+    color: #333; /* Textfarbe */
+}
+
+.textlinks {
+    text-align: left;
+}
+
+.textlinks2 {
+    text-align: left;
+}
+
+.zentriert {
+    text-align: center;  /* Zentriert den Text */
+    margin: 10px 0;     /* Fügt vertikalen Abstand zwischen den Elementen hinzu */
+}
+
+.zentriert li {
+    list-style-type: none; /* Entfernt die Aufzählungszeichen */
+    margin: 10px 0;      /* Fügt vertikalen Abstand zwischen den Listenelementen hinzu */
+}
+
+.img {
+    ;
+}
+
+/* Header-Stile */
+header {
+    background-color: #333; /* Hintergrundfarbe des Headers */
+    color: #fff; /* Textfarbe im Header */
+    padding: 20px; /* Padding im Header */
+    text-align: center; /* Text zentriert */
+}
+
+nav ul {
+    list-style: none; /* Entfernt Aufzählungszeichen */
+    padding: 0; /* Entfernt Padding */
+}
+
+nav ul li {
+    display: inline; /* Li-Elemente nebeneinander */
+    margin: 0 15px; /* Abstand zwischen den Links */
+}
+
+nav a {
+    color: #fff; /* Linkfarbe */
+    text-decoration: none; /* Unterstreichung entfernen */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Unterstreichung bei Hover */
+}
+
+/* Abschnitts-Stile */
+.welcome-section, .ueber-uns, .Kontakt, .Imperessum, .Datenschutz {
+    padding: 20px; /* Padding für alle Sektionen */
+    margin: 20px; /* Margin für alle Sektionen */
+    background-color: #fff; /* Hintergrundfarbe der Sektionen */
+    border-radius: 5px; /* Abgerundete Ecken */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten für die Sektionen */
+}
+
+.textmitte {
+    text-align: center;
+}
+
+/* Formular-Stile */
+form {
+    margin-top: 20px; /* Abstand über dem Formular */
+}
+
+label {
+    display: block; /* Block-Element */
+    margin: 10px 0 5px; /* Margin für Labels */
+}
+
+.img-responsive {
+    width: 800px;  /* Setzt die Breite auf 800 Pixel */
+    height: 600px; /* Setzt die Höhe auf 600 Pixel */
+    object-fit: cover; /* Stellt sicher, dass das Bild den gesamten Bereich ausfüllt, ohne das Seitenverhältnis zu verlieren */
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Breite auf 100% setzen */
+    padding: 10px; /* Padding innerhalb der Eingabefelder */
+    margin-bottom: 10px; /* Abstand unter den Eingabefeldern */
+    border: 1px solid #ccc; /* Rahmen für die Eingabefelder */
+    border-radius: 4px; /* Abgerundete Ecken */
+}
+
+/* Button-Stile */
+button {
+    background-color: #007BFF; /* Hintergrundfarbe des Buttons */
+    color: #fff; /* Textfarbe des Buttons */
+    padding: 10px 15px; /* Padding des Buttons */
+    border: none; /* Keine Rahmen */
+    border-radius: 5px; /* Abgerundete Ecken */
+    cursor: pointer; /* Cursor bei Hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Dunklere Hintergrundfarbe bei Hover */
+}
+
+/* Footer-Stile */
+footer {
+    background-color: #333; /* Hintergrundfarbe des Footers */
+    color: #fff; /* Textfarbe im Footer */
+    text-align: center; /* Text zentriert */
+    padding: 20px; /* Padding im Footer */
+    position: relative; /* Für positionierte Elemente */
+    bottom: 0; /* Unten im Container */
+    width: 100%; /* Volle Breite */
+}
+
+footer nav ul {
+    margin: 0; /* Entfernt Margin */
+    padding: 0; /* Entfernt Padding */
+    list-style: none; /* Entfernt Aufzählungszeichen */
+}
+
+footer nav ul li {
+    display: inline; /* Li-Elemente nebeneinander */
+    margin: 0 0px; /* Abstand zwischen den Links */
+}
