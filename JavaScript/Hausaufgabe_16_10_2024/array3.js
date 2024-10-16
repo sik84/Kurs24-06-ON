@@ -8,11 +8,9 @@ const geradeZahlen = zufallsArray.filter(zahl => zahl % 2 === 0);
 console.log(geradeZahlen);
 
 // Zahlenarry [22 18 8 50] nun addieren:
-ZahlenArray = [22, 8, 18, 50]
-let summe = 0; // 1. Schritt: Summenvariable initialisieren
 
-ZahlenArray.forEach(zahl => {
-    summe += zahl; // 2. Schritt: aktuelle Zahl zur Summe hinzufügen
-});
+const ZahlenArray = [22, 8, 18, 50];
 
-console.log(summe); // 3. Schritt: Summe ausgeben
+const summe = ZahlenArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+console.log(summe);
