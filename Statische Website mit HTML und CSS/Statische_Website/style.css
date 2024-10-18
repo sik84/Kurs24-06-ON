@@ -1,0 +1,26 @@
+body {
+    background-color: darkcyan;
+}
+
+h1 {
+    color: darkmagenta;
+    text-align: center;
+}
+
+h2 {
+    color: beige;
+    text-align: left;
+}
+
+p {
+    font-size: medium;
+    color: lime;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 30%;
+    height: 40%
+}

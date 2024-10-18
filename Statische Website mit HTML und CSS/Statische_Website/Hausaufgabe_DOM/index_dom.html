@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box mit Farbwechsel</title>
+    <style>
+        /* Styling für die Box */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue; /* Ausgangsfarbe */
+            transition: background-color 0.3s; /* Sanfter Übergang bei Farbänderung */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mr. Project</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="ueber-uns.html">Über uns</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!--Aufgabe 1:-->
+    <h1>Willkommen auf unserer Website!</h1>
+    <h2 id="1234">Servus<br>alle Fehler zu korrigeren!</h2>
+    <script>
+        const h2 = document.getElementById("1234");
+        console.log(h2.textContent); // Ausgabe: Servus!
+        h2.innerHTML = '<p>Herzlich Willkommen</p>';
+        </script>
+
+<!--Aufgabe 3:-->
+<h2>Servus, sch...ähh, ich meine liebe Aufgabe 3! :D</h2>
+        <nav>
+            <ul>
+                <li><a>Aepfel</a></li>
+                <li><a id="text">Banane</a></li>
+                <li><a>Orange</a></li>
+            </ul>
+        </nav>
+        <script>
+            const text = document.getElementById('text');
+            text.textContent = 'Mango';
+            </script>
+
+<!--Aufgabe 2:-->
+    <form action="/senden" method="post">
+        <button id="color" type="submit">Nachricht senden</button>
+    </form>    
+        <script>
+            const color = document.getElementById('color');
+            color.style.backgroundColor = 'red';
+        </script>
+
+
+<!--Aufgabe 4:-->
+<div id="meineBox"></div>
+
+    <script>
+        // Ein neues <p>-Element erstellen
+        var neuerAbsatz = document.createElement("p");
+        neuerAbsatz.textContent = "Dies ist ein neuer Absatz"; // Text hinzufügen
+
+        // Die <div>-Box finden und das neue <p>-Element hinzufügen
+        var box = document.getElementById("meineBox");
+        box.appendChild(neuerAbsatz);
+    </script>
+
+<!--Aufgabe 5-->
+<form action="/senden" method="post">
+    <button id="clickMe" type="submit">Klick mich</button>
+    <script>
+        // Korrekte Kommentare verwenden
+        const button5 = document.getElementById('clickMe');
+        button.addEventListener('click', () => {
+            alert('Button wurde geklickt!');
+        });
+
+        const list = document.createElement('ul'); // Liste erstellen, falls sie fehlt
+        document.body.appendChild(list); // Liste dem Body hinzufügen
+
+        const newItem = document.createElement('li');
+        newItem.textContent = 'clickMe';
+        list.appendChild(newItem);
+    </script>
+</form>
+
+<!--Aufgabe 6:-->
+<div class="box"></div>
+
+    <script>
+        // Die Box auswählen
+        var box = document.querySelector('.box');
+
+        // Farbe ändern, wenn die Maus über die Box fährt
+        box.addEventListener('mouseover', function() {
+            box.style.backgroundColor = 'coral'; // Neue Farbe beim Hovern
+        });
+
+        // Farbe zurücksetzen, wenn die Maus die Box verlässt
+        box.addEventListener('mouseout', function() {
+            box.style.backgroundColor = 'lightblue'; // Zurück zur Ausgangsfarbe
+        });
+    </script>
+
+<!--Aufgabe 7:-->
+
+ <!-- Eingabefeld und Absenden-Button -->
+ <input type="text" id="meinInput" placeholder="Text eingeben...">
+ <button id="absendenButton">Absenden</button>
+
+<!-- Bereich, wo der Text angezeigt wird -->
+<div id="anzeigeBereich"></div>
+
+<script>
+    // Button und Eingabefeld selektieren
+    var button = document.getElementById('absendenButton');
+    var inputFeld = document.getElementById('meinInput');
+    var anzeigeBereich = document.getElementById('anzeigeBereich');
+
+    // Event-Listener für den Button
+    button.addEventListener('click', function() {
+        // Den eingegebenen Text aus dem Input-Feld holen
+        var eingegebenerText = inputFeld.getAttribute('value') || inputFeld.value;
+
+        // Ein neues <p>-Element erstellen
+        var neuerAbsatz = document.createElement('p');
+        neuerAbsatz.textContent = eingegebenerText; // Text in das <p>-Element einfügen
+
+        // Den neuen Absatz unterhalb des Buttons hinzufügen
+        anzeigeBereich.appendChild(neuerAbsatz);
+    });
+</script>
+
+<!--Aufgabe 8:-->
+<!-- Drei Boxen mit der Klasse "box" -->
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+
+<script>
+    // Alle Elemente mit der Klasse "box" auswählen
+    var boxen = document.getElementsByClassName('box');
+
+    // Funktion, um die Farbe aller Boxen auf blau zu ändern
+    function farbeAendern() {
+        // Über die HTMLCollection iterieren
+        for (var i = 0; i < boxen.length; i++) {
+            boxen[i].style.backgroundColor = 'blue'; // Hintergrundfarbe ändern
+        }
+    }
+
+    // Jeder Box ein Klick-Event hinzufügen
+    for (var i = 0; i < boxen.length; i++) {
+        boxen[i].addEventListener('click', farbeAendern);
+    }
+</script>
+
+</body>
+</html>
