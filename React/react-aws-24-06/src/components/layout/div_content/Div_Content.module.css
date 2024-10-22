@@ -1,0 +1,5 @@
+.div_Content {
+flex-grow: 1; /* Nimmt den verbleibenden Platz ein */
+height: auto; /* Lässt den Inhalt automatisch anpassen */
+background-color: red;
+}

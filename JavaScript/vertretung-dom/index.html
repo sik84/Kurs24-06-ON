@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <!--npm ist der Paketmanager von node!-->
+</head>
+<body>
+    <h1 id="Ueberschrift">Hello World!</h1>
+    <button id="MeinButton">Klick mich</button>
+
+    <script>
+        
+        let button = document.getElementById("MeinButton");
+        let Ueberschrift = document.getElementById("Ueberschrift");
+
+        button.addEventListener("click", function(){
+            Ueberschrift.textContent = "Hallo zusammen in Bayern!"
+        });
+    </script>
+</body>
+</html>
