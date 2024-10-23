@@ -8,3 +8,13 @@
 .homebtn {
   background-color: blue;
 }
+
+.standard_button {
+  background-color: darkmagenta;
+}
+
+.textcustom {
+  flex-grow: 1; /* Nimmt den verbleibenden Platz ein */
+  height: auto; /* Lässt den Inhalt automatisch anpassen */
+  background-color: whitesmoke;
+  }
