@@ -3,7 +3,7 @@
 function checkUser() {
     var name = "John"
     let age = 25
-    const isStudent = true
+    
     if(age > 18) {
         console.log(name + " is an adult")
     } else {
